@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traffic Light</title>
-</head>
-<body>
-      <img id="light" src="image/light1.avif" alt="" style="width: 100px; height: 100px;">
-    <br>
-    <button onclick="turn1()">Red</button>
-    <button onclick="turn2()">Yellow</button>
-     <button onclick="turn3()">Green</button>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traffic Light System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded shadow-md w-full max-w-sm text-center">
+      <h1 class="text-2xl font-bold mb-4 text-gray-700">
+        Traffic Light System
+      </h1>
+      <input
+        type="text"
+        id="colorInput"
+        placeholder="Enter red, yellow or green"
+        class="border border-gray-300 rounded px-4 py-2 w-full mb-4"
+      />
+      <button
+        id="checkButton"
+        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 w-full"
+      >
+        Check
+      </button>
+      <p id="resultText" class="mt-4 text-lg font-semibold text-gray-800 hover: bg-blue-600"></p>
+    </div>
 
     <script src="traffic.js"></script>
-</body>
+  </body>
 </html>

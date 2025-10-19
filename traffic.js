@@ -9,6 +9,6 @@ document.getElementById("checkButton").addEventListener("click", function () {
   } else if (color === "green") {
     resultText.textContent = "Go";
   } else {
-    resultText.textContent = "Invalid color input";
+    resultText.textContent = "Invalid Traffic Light";
   }
 });
